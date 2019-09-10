@@ -13,7 +13,8 @@ class CreateCostumes < ActiveRecord::Migration[5.1]
   def change
     create_table :costumes do |t|
       t.string :name
-      t.integer :calories
+      t.integer :price
+      t.string :size 
       t.timestamps
     end
   end
